@@ -431,3 +431,39 @@ justify-content:center;
     transform:translateY(0);
 
 }
+/* ================================
+   Animated Stars
+================================ */
+
+.star{
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:50%;
+
+    opacity:.2;
+
+    animation:twinkle infinite ease-in-out;
+
+}
+
+@keyframes twinkle{
+
+0%{
+opacity:.2;
+transform:scale(1);
+}
+
+50%{
+opacity:1;
+transform:scale(1.8);
+}
+
+100%{
+opacity:.2;
+transform:scale(1);
+}
+
+}
